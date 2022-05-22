@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,23 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.main_container{
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(85, 91, 255);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  bottom: -15px;
+  left: 40%;
+  transition: all 1s;
+  
 }
