@@ -10,11 +10,13 @@ const Menu = (props: Props) => {
 
   return (
     <div className="px-2 main_container flex  items-center justify-between text-md">
-      <div className="lg:max-w-[40%] max-w-[20%] w-full flex items-center font-bold">
-        <div>
-          <Image src="/img/logo.png" alt="" width="50%" height="50%"/>
-        </div>
-        <div>Reward Of Life</div>
+      <div className="lg:max-w-[40%] max-w-[20%] w-full flex items-center font-bold ">
+        <Link href='/'>
+          <Image src="/img/logo.png" alt="" width="50%" height="50%" />
+        </Link>
+        <Link href='/'>
+          Reward Of Life
+        </Link>
       </div>
       <div className="flex justify-between w-full items-center ">
         <div>
@@ -51,7 +53,7 @@ const Menu = (props: Props) => {
                 </a>
               </Link>
             </li>
-           
+
           </ul>
         </div>
         <div className="bg-gray-700 text-white h-10 px-3 rounded-md font-bold flex items-center text-sm lg:text-md">
