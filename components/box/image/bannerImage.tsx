@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 
-type Props = {}
+type Props = {
+  image: string;
+}
 
-const BannerImage = (props: Props) => {
+const BannerImage = ({image}: Props) => {
   return (
     <div className=" relative md:w-[450px] my-auto mx-auto w-full">
       {/* <div className="relative md:w-[400px] md:h-[400px] overflow-hidden rounded-full mx-auto text-center drop-shadow-[20px_40px_80px_rgba(0,166,247,0.25)]">
@@ -36,7 +38,7 @@ const BannerImage = (props: Props) => {
         <div className='z-20 absolute bottom-20 right-10 drop-shadow-[0_10px_20px_rgba(195,146,250,0.9)] opacity-50 md:opacity-100'>
           <Image src={"/img/box.png"} alt="" width={40} height={40}/>
         </div> */}
-        <Image src={'/img/banner.png'} alt='' width={"100%"} height={"100%"}
+        <Image src={image} alt='' width={"100%"} height={"100%"}
          objectFit='contain'
          layout='responsive'
         />
