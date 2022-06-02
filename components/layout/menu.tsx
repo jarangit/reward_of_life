@@ -10,9 +10,9 @@ const Menu = (props: Props) => {
 
   return (
     <div className="px-2 main_container flex  items-center justify-between text-md">
-      <div className="lg:max-w-[40%] max-w-[20%] w-full flex items-center font-bold ">
+      <div className="lg:max-w-[40%] max-w-[20%] w-full flex items-center font-bold gap-2 ">
         <Link href='/'>
-          <Image src="/img/logo.png" alt="" width="50%" height="50%" />
+          <Image src="/img/logo/logo_star.png" alt="" width="50%" height="50%" />
         </Link>
         <Link href='/'>
           Reward Of Life
