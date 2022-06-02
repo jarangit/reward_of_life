@@ -1,0 +1,61 @@
+export const mockListCategory = [{
+  "id": 1,
+  "first_name": "Purple"
+}, {
+  "id": 2,
+  "first_name": "Pink"
+}, {
+  "id": 3,
+  "first_name": "Teal"
+}, {
+  "id": 4,
+  "first_name": "Fuscia"
+}, {
+  "id": 5,
+  "first_name": "Orange"
+}, {
+  "id": 6,
+  "first_name": "Khaki"
+}, {
+  "id": 7,
+  "first_name": "Crimson"
+}, {
+  "id": 8,
+  "first_name": "Violet"
+}, {
+  "id": 9,
+  "first_name": "Orange"
+}, {
+  "id": 10,
+  "first_name": "Maroon"
+}, {
+  "id": 11,
+  "first_name": "Khaki"
+}, {
+  "id": 12,
+  "first_name": "Blue"
+}, {
+  "id": 13,
+  "first_name": "Indigo"
+}, {
+  "id": 14,
+  "first_name": "Aquamarine"
+}, {
+  "id": 15,
+  "first_name": "Violet"
+}, {
+  "id": 16,
+  "first_name": "Khaki"
+}, {
+  "id": 17,
+  "first_name": "Maroon"
+}, {
+  "id": 18,
+  "first_name": "Indigo"
+}, {
+  "id": 19,
+  "first_name": "Pink"
+}, {
+  "id": 20,
+  "first_name": "Turquoise"
+}]

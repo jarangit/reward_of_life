@@ -38,22 +38,13 @@ const Menu = (props: Props) => {
               </Link>
             </li>
             <li className={`hover:text-black transition-all relative ${router.asPath == '/about' && 'text-black'}`}>
-              <Link href='/about'>
+              <Link href='/playground'>
                 <a>
-                  About
-                  {router.asPath == '/about' && <span className='dot' />}
+                  Playground
+                  {router.asPath == '/playground' && <span className='dot' />}
                 </a>
               </Link>
             </li>
-            <li className={`hover:text-black transition-all relative ${router.asPath == '/contract' && 'text-black'}`}>
-              <Link href='/contract'>
-                <a>
-                  Contract
-                  {router.asPath == '/contract' && <span className='dot' />}
-                </a>
-              </Link>
-            </li>
-
           </ul>
         </div>
         <div className="bg-gray-700 text-white h-10 px-3 rounded-md font-bold flex items-center text-sm lg:text-md">
