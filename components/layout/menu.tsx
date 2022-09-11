@@ -2,6 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
+import { AiFillTwitterSquare } from 'react-icons/ai'
+import { BsInstagram } from 'react-icons/bs'
+import { FaDiscord } from 'react-icons/fa'
 
 type Props = {}
 
@@ -47,6 +50,15 @@ const Menu = (props: Props) => {
             </li>
           </ul>
         </div>
+        <ul className="flex justify-center gap-4">
+          <li>
+            <BsInstagram />
+          </li>
+          <li>
+            <AiFillTwitterSquare />
+          </li>
+          <li><FaDiscord /></li>
+        </ul>
         {/* <div className="bg-blue-500 text-white h-10 px-3 rounded-md font-bold flex items-center text-sm lg:text-md cursor-pointer">
           Try to free
         </div> */}

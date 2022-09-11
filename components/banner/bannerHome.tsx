@@ -7,9 +7,9 @@ type Props = {}
 
 const BannerHome = (props: Props) => {
   return (
-    <div className="lg:flex mt-10  items-center  ">
+    <div className="lg:flex mt-10  items-center main_container ">
       <div className="w-full lg:w-1/2">
-        <div className=" text-3xl lg:text-6xl font-bold text-gray-100 uppercase ">
+        <div className=" text-3xl lg:text-4xl font-bold text-gray-100 uppercase ">
           <span className="text-blue-500" >Your things</span> Project
         </div>
         <div className="text-sm w-3/4 my-3 lg:my-6 text-gray-300">
@@ -30,7 +30,7 @@ const BannerHome = (props: Props) => {
         </div> */}
       </div>
       <div className="items-center w-full lg:w-1/2 mt-10 lg:mt-0 ">
-        <BannerImage image='/img/banner.png' />
+        <BannerImage image='/img/banner/cupboeadMix4x4Tran.png' />
       </div>
 
 

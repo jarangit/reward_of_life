@@ -11,7 +11,7 @@ const Layout = ({ children }: Props) => {
   return (
     <div>
       <MenuController />
-      <main className='main_container'>
+      <main>
         {children}
       </main>
       <Footer />
