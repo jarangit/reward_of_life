@@ -15,13 +15,13 @@ const Menu = (props: Props) => {
           <Image src="/img/logo/logo_star.png" alt="" width="50%" height="50%" />
         </Link>
         <Link href='/'>
-          Reward Of Life
+          YOUR THINGS
         </Link>
       </div>
       <div className="flex justify-between w-full items-center ">
         <div>
           <ul className="flex gap-6 items-center h-20 font-bold text-gray-400 cursor-pointer">
-            <li className={`hover:text-black transition-all relative ${router.asPath == '/' && 'text-black'}`}>
+            <li className={`hover:text-blue-500 transition-all relative ${router.asPath == '/' && 'text-blue-500'}`}>
               <Link href='/'>
                 <a>
                   Home
@@ -29,15 +29,15 @@ const Menu = (props: Props) => {
                 </a>
               </Link>
             </li>
-            <li className={`hover:text-black transition-all relative ${router.asPath == '/icon_rewards' && 'text-black'}`}>
-              <Link href='/icon_rewards'>
+            <li className={`hover:text-blue-500  transition-all relative ${router.asPath == '/icon_rewards' && 'text-blue-500'}`}>
+              <Link href='https://opensea.io/collection/yourthings'>
                 <a>
-                  Icon Rewards
+                  Things
                   {router.asPath == '/icon_rewards' && <span className='dot' />}
                 </a>
               </Link>
             </li>
-            <li className={`hover:text-black transition-all relative ${router.asPath == '/about' && 'text-black'}`}>
+            <li className={`hover:text-blue-500 transition-all relative ${router.asPath == '/about' && 'text-blue-500'}`}>
               <Link href='/playground'>
                 <a>
                   Playground
@@ -47,9 +47,9 @@ const Menu = (props: Props) => {
             </li>
           </ul>
         </div>
-        <div className="bg-gray-700 text-white h-10 px-3 rounded-md font-bold flex items-center text-sm lg:text-md">
+        {/* <div className="bg-blue-500 text-white h-10 px-3 rounded-md font-bold flex items-center text-sm lg:text-md cursor-pointer">
           Try to free
-        </div>
+        </div> */}
       </div>
     </div>
   )

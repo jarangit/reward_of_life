@@ -4,7 +4,9 @@ type Props = {}
 
 const PlaygroundPage = (props: Props) => {
   return (
-    <div>PlaygroundPage page</div>
+    <div className="min-h-screen flex items-center justify-center text-xl">
+      Coming Soon...
+      </div>
   )
 }
 
