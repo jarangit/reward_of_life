@@ -9,13 +9,13 @@ const RoadMap = (props: Props) => {
       <div className='text-3xl font-bold text-center text-blue-500 uppercase'>Road Map</div>
       <ul className='w-full lg:w-2/4 mx-auto my-3'>
         {dataRoadMap.map((items: any, key: number) => (
-          <li className='my-3'>
+          <li className='my-3' key={key}>
             <div className='text-lg font-bold text-red-500'>
               {items.date}
             </div>
-            {items.contents.map((list: any) => (
-              <div className='ml-10 flex items-start gap-2'>
-                <div className = "mt-1">
+            {items.contents.map((list: any, key: number) => (
+              <div className='ml-10 flex items-start gap-2' key={key}>
+                <div className="mt-1">
                   {list.status ? (
                     <AiFillCheckCircle />
                   ) : (
