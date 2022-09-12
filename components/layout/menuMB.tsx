@@ -10,7 +10,7 @@ const MenuMB = (props: Props) => {
   console.log(router.asPath);
   const [toggle, setToggle] = useState(false)
   return (
-    <div className="px-2 main_container flex bg-blue-900  items-center justify-between text-md  ">
+    <div className="px-2 !py-2 main_container flex bg-blue-500  items-center justify-between text-md  ">
       <div className="w-full flex items-center font-bold gap-5 text-xs sm:text-md">
         <Link href='/'>
           <Image src="/img/logo/logo_star.png" alt="" width="50%" height="50%" />

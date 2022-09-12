@@ -8,11 +8,7 @@ export const dataRoadMap = [
       },
       {
         status:false,
-        text:"Build the feater register website by smart contract"
-      },
-      {
-        status:false,
-        text:"Create the pages for my items for users can see their items"
+        text:"Build the feature register website by smart contract"
       },
     ]
   },

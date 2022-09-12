@@ -7,7 +7,7 @@ type Props = {}
 
 const BannerHome = (props: Props) => {
   return (
-    <div className="lg:flex mt-10  items-center main_container ">
+    <div className="lg:flex mt-10  items-center main_container !py-10">
       <div className="w-full lg:w-1/2">
         <div className=" text-3xl lg:text-4xl font-bold text-gray-100 uppercase ">
           <span className="text-blue-500" >Your things</span> Project
