@@ -12,7 +12,7 @@ const UserController = ({ onChangeNameScene, onChangeUserAvatar }: Props) => {
   return (
     <div className='flex flex-col gap-5'>
       <div className='text-2xl font-bold'>
-        Create your scene
+        Create your scene 
       </div>
       <div>
         <label htmlFor="title">Scene name</label>

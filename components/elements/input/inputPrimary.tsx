@@ -27,7 +27,7 @@ const InputPrimary = ({
     onChange(e.target.value)
   }
   return (
-    <input className={`${styled.main}`} type={type} id={id} placeholder={placeholder} onChange={onSetName} />
+    <input className={`${styled.main}`} type={type} id={id} placeholder={placeholder} onChange={onSetName} max = {3}/>
   )
 }
 

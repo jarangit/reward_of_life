@@ -16,7 +16,7 @@ const PlaygroundPage = (props: Props) => {
           userAvatar={userAvatar}
         />
       </div>
-      <div className="col-span-1 border border-orange rounded-lg p-3">
+      <div className="col-span-1 border border-blue rounded-lg p-3">
         <UserController 
         onChangeNameScene={setNameScene} 
         onChangeUserAvatar={setUserAvatar} 
