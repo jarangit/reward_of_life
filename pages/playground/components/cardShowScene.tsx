@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import InputAddItems from './inputAddItems';
+import useModal from '../../../hooks/useModal.tsx';
+import ModalSelectItemIcons from '../../../components/modal/modalSelectItemIcons';
 type Props = {
   nameScene: string;
   userAvatar: string;
@@ -11,10 +13,12 @@ const CardShowScene = ({ nameScene, userAvatar }: Props) => {
   const [item2, setItem2] = useState("")
   const [item3, setItem3] = useState("")
   const [item4, setItem4] = useState("")
+
+  const { isShowModalSelectItemIcon, setIsShowModalSelectItemIcon } = useModal()
   return (
     <div className="">
       <div className='text-2xl font-bold'>
-        Your Scene 
+        Your Scene
         <span className='text-blue'> Demo</span>
       </div>
       <div className='w-full flex justify-center'>
@@ -35,7 +39,13 @@ const CardShowScene = ({ nameScene, userAvatar }: Props) => {
                 />
               ) : ""}
             </div>
-
+            <div>
+              <button onClick={() => setIsShowModalSelectItemIcon(!isShowModalSelectItemIcon)}>Show modal</button>
+              <ModalSelectItemIcons
+                isShow={isShowModalSelectItemIcon}
+                hide={() => setIsShowModalSelectItemIcon(false)}
+              />
+            </div>
             <div className='absolute top-[4rem] left-2  rounded-full p-2 animate-bounce-slow drop-shadow-[0_5px_15px_rgba(224,174,76,0.9)]'>
               <InputAddItems
                 id={"item1"}
