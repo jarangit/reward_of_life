@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import InputAddItems from './inputAddItems';
-import useModal from '../../../hooks/useModal.tsx';
 import ModalSelectItemIcons from '../../../components/modal/modalSelectItemIcons';
+import useModal from '../../../hooks/useModal';
 type Props = {
   nameScene: string;
   userAvatar: string;
@@ -14,7 +14,7 @@ const CardShowScene = ({ nameScene, userAvatar }: Props) => {
   const [item3, setItem3] = useState("")
   const [item4, setItem4] = useState("")
 
-  const { isShowModalSelectItemIcon, setIsShowModalSelectItemIcon } = useModal()
+  const { isShowModalSelectItemIcon, setIsShowModalSelectItemIcon } = useModal("")
   return (
     <div className="">
       <div className='text-2xl font-bold'>
