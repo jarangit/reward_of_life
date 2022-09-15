@@ -11,8 +11,8 @@ const SideMenuCategory = (props: Props) => {
       </div>
       <div className="flex flex-col gap-4">
         {mockListCategory &&
-          mockListCategory.map((item: any) => (
-            <div key={item.id} className="font-bold cursor-pointer text-gray-500 hover:text-black">{item.first_name}</div>
+          mockListCategory.map((item: any, key:number) => (
+            <div key={key} className="font-bold cursor-pointer text-gray-500 hover:text-black">{item.first_name}</div>
           ))
         }
       </div>

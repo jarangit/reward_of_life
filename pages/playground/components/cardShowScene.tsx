@@ -3,6 +3,8 @@ import Image from 'next/image'
 import InputAddItems from './inputAddItems';
 import ModalSelectItemIcons from '../../../components/modal/modalSelectItemIcons';
 import useModal from '../../../hooks/useModal';
+import { BiImageAdd } from 'react-icons/bi';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 type Props = {
   nameScene: string;
   userAvatar: string;
@@ -14,7 +16,10 @@ const CardShowScene = ({ nameScene, userAvatar }: Props) => {
   const [item3, setItem3] = useState("")
   const [item4, setItem4] = useState("")
 
-  const { isShowModalSelectItemIcon, setIsShowModalSelectItemIcon } = useModal("")
+  const { isShowModalSelectItemIcon, setIsShowModalSelectItemIcon } = useModal({
+    status: false,
+    action: () => "",
+  })
   return (
     <div className="">
       <div className='text-2xl font-bold'>
@@ -39,48 +44,111 @@ const CardShowScene = ({ nameScene, userAvatar }: Props) => {
                 />
               ) : ""}
             </div>
-            <div>
-              <button onClick={() => setIsShowModalSelectItemIcon(!isShowModalSelectItemIcon)}>Show modal</button>
-              <ModalSelectItemIcons
-                isShow={isShowModalSelectItemIcon}
-                hide={() => setIsShowModalSelectItemIcon(false)}
-              />
-            </div>
+
             <div className='absolute top-[4rem] left-2  rounded-full p-2 animate-bounce-slow drop-shadow-[0_5px_15px_rgba(224,174,76,0.9)]'>
-              <InputAddItems
-                id={"item1"}
-                iconColor={"text-mint"}
-                currentImage={item1}
-                onSetImageItem={setItem1}
-              />
+              <div>
+                {item1 ? (
+                  <>
+                    <Image
+                      src={item1}
+                      alt=""
+                      width={90}
+                      height={90}
+                    />
+                    <button onClick={() => setItem1("")}>
+                      <AiOutlineCloseCircle size={20} />
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <button onClick={() => setIsShowModalSelectItemIcon({ status: true, action: setItem1 })}>
+                      <BiImageAdd size={50} />
+                    </button>
+
+                  </>
+                )}
+
+              </div>
             </div>
             <div className='absolute top-[5rem] right-5  rounded-full p-2 animate-bounce-slow drop-shadow-[0_5px_15px_rgba(224,174,76,0.9)]'>
-              <InputAddItems
-                id={"item1"}
-                iconColor={"text-mint"}
-                currentImage={item2}
-                onSetImageItem={setItem2}
-              />
+              <div>
+                {item2 ? (
+                  <>
+                    <Image
+                      src={item2}
+                      alt=""
+                      width={90}
+                      height={90}
+                    />
+                    <button onClick={() => setItem2("")}>
+                      <AiOutlineCloseCircle size={20} />
+                    </button>
+                  </>
+                ) : (
+                  <button onClick={() => setIsShowModalSelectItemIcon({ status: true, action: setItem2 })}>
+                    <BiImageAdd size={50} />
+                  </button>
+                )}
+
+              </div>
             </div>
             <div className='absolute bottom-[8rem] left-2  rounded-full p-2 animate-bounce-slow drop-shadow-[0_5px_15px_rgba(224,174,76,0.9)]'>
-              <InputAddItems
-                id={"item1"}
-                iconColor={"text-mint"}
-                currentImage={item3}
-                onSetImageItem={setItem3}
-              />
+              <div>
+                {item3 ? (
+                  <>
+                    <Image
+                      src={item3}
+                      alt=""
+                      width={90}
+                      height={90}
+                    />
+                    <button onClick={() => setItem3("")}>
+                      <AiOutlineCloseCircle size={20} />
+                    </button>
+                  </>
+                ) : (
+                  <button onClick={() => setIsShowModalSelectItemIcon({ status: true, action: setItem3 })}>
+                    <BiImageAdd size={50} />
+                  </button>
+                )}
+
+              </div>
             </div>
             <div className='absolute bottom-[7rem] right-5  rounded-full p-2 animate-bounce-slow drop-shadow-[0_5px_15px_rgba(224,174,76,0.9)]'>
-              <InputAddItems
-                id={"item1"}
-                iconColor={"text-mint"}
-                currentImage={item4}
-                onSetImageItem={setItem4}
-              />
+              <div>
+                {item4 ? (
+                  <>
+                    <Image
+                      src={item4}
+                      alt=""
+                      width={90}
+                      height={90}
+                    />
+                    <button onClick={() => setItem4("")}>
+                      <AiOutlineCloseCircle size={20} />
+                    </button>
+                  </>
+                ) : (
+                  <button onClick={() => setIsShowModalSelectItemIcon({ status: true, action: setItem4 })}>
+                    <BiImageAdd size={50} />
+                  </button>
+                )}
+
+              </div>
             </div>
           </div>
         </div>
       </div>
+      {/* Modal */}
+     
+      {isShowModalSelectItemIcon.status && (
+        <ModalSelectItemIcons
+          isShow={isShowModalSelectItemIcon.status}
+          hide={setIsShowModalSelectItemIcon}
+          onSelect={isShowModalSelectItemIcon.action}
+        />
+      )}
+      
     </div>
   )
 }

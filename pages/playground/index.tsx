@@ -10,13 +10,13 @@ const PlaygroundPage = (props: Props) => {
   const [userAvatar, setUserAvatar] = useState("")
   return (
     <div className='grid grid-cols-4 min-h-screen main_container !mb-6 gap-6'>
-      <div className='col-span-3 p-3 border border-blue rounded-lg min-h-screen'>
+      <div className='col-span-3 p-3 border border-white rounded-lg min-h-screen'>
         <CardShowScene
           nameScene={nameScene}
           userAvatar={userAvatar}
         />
       </div>
-      <div className="col-span-1 border border-blue rounded-lg p-3">
+      <div className="col-span-1 border border-white rounded-lg p-3">
         <UserController 
         onChangeNameScene={setNameScene} 
         onChangeUserAvatar={setUserAvatar} 
