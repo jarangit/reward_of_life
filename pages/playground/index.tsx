@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { ButtonPrimary } from '../../components/elements/button'
+import ModalShowScene from '../../components/modal/modalShowScene'
+import useModal from '../../hooks/useModal'
 import CardShowScene from './components/cardShowScene'
 import UserController from './components/userController'
 
@@ -17,12 +19,11 @@ const PlaygroundPage = (props: Props) => {
         />
       </div>
       <div className="col-span-1 border border-white rounded-lg p-3">
-        <UserController 
-        onChangeNameScene={setNameScene} 
-        onChangeUserAvatar={setUserAvatar} 
+        <UserController
+          onChangeNameScene={setNameScene}
+          onChangeUserAvatar={setUserAvatar}
         />
       </div>
-
     </div>
   )
 }

@@ -16,7 +16,8 @@ const ButtonPrimary = ({
   h,
   p,
   m,
-  bg
+  bg,
+  onClick
 }: Props) => {
   const styled = useMemo(() => ({
     main:`
@@ -28,7 +29,7 @@ const ButtonPrimary = ({
     `
   }), [])
   return (
-    <button className={`${styled.main}`} >{text} </button>
+    <button className={`${styled.main}`} onClick = {onClick} >{text} </button>
   )
 }
 

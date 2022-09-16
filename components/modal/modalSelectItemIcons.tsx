@@ -29,14 +29,13 @@ const dataImage = [
 ]
 
 const ModalSelectItemIcons = ({ isShow, hide, onSelect }: Props) => {
-
   function selectImage(e: any) {
     if (e) {
-      console.log('%cMyProject%cline:35%ce', 'color:#fff;background:#ee6f57;padding:3px;border-radius:2px', 'color:#fff;background:#1f3c88;padding:3px;border-radius:2px', 'color:#fff;background:rgb(114, 83, 52);padding:3px;border-radius:2px', e)
       onSelect(e)
       hide({ status: false })
     }
   }
+  
   return (
     <>
       <Modal isShow={isShow} hide={hide}>
