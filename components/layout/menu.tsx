@@ -51,13 +51,13 @@ const Menu = (props: Props) => {
           </ul>
         </div>
         <ul className="flex justify-center gap-4">
-          <li>
+          {/* <li>
             <BsInstagram />
-          </li>
+          </li> */}
           <li>
-            <AiFillTwitterSquare />
+            <AiFillTwitterSquare size = {30}/>
           </li>
-          <li><FaDiscord /></li>
+          {/* <li><FaDiscord /></li> */}
         </ul>
         {/* <div className="bg-blue-500 text-white h-10 px-3 rounded-md font-bold flex items-center text-sm lg:text-md cursor-pointer">
           Try to free

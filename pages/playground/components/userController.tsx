@@ -15,14 +15,14 @@ const UserController = ({ onChangeNameScene, onChangeUserAvatar }: Props) => {
   const { isShowModalShowScene, setIsShowModalShowScene } = useModal("")
   return (
     <div className='flex flex-col gap-5'>
-      <div className='text-2xl font-bold'>
-        Create your scene
+      <div className='text-xl font-bold uppercase'>
+        Create your Card
       </div>
       <div>
-        <label htmlFor="title">Scene name</label>
+        <label htmlFor="title">Card name</label>
         <InputPrimary
           type="text"
-          placeholder='Your scene name'
+          placeholder='Your Card name'
           onChange={onChangeNameScene}
         />
       </div>

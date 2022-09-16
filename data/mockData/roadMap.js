@@ -4,11 +4,15 @@ export const dataRoadMap = [
     contents:[
       {
         status:false,
-        text:"Create the pages for show all our items on this website"
+        text:"Create the pages that will display all of our products on this website."
       },
       {
         status:false,
-        text:"Build the feature register website by smart contract"
+        text:"Create a smart contract-based feature register website."
+      },
+      {
+        status:false,
+        text:"Create NFT 100 items"
       },
     ]
   },
@@ -17,7 +21,11 @@ export const dataRoadMap = [
     contents:[
       {
         status:false,
-        text:"Create the pages for my items for users can see their items"
+        text:"Create the pages for user items for users can see their items like a showroom"
+      },
+      {
+        status:false,
+        text:"Create NFT 100 items"
       },
     ]
   },
@@ -30,7 +38,11 @@ export const dataRoadMap = [
       },
       {
         status:false,
-        text:"Create the pages your room for show all yours icon and you can share your room to other to see",
+        text:"Create pages for your space to display all of your icons, and then share them with others so they can see.",
+      },
+      {
+        status:false,
+        text:"Create NFT 100 items"
       },
     ]
   },
@@ -39,7 +51,11 @@ export const dataRoadMap = [
     contents:[
       {
         status:false,
-        text:"Create feature vote to earn (Vote the room of other you like) spend by smart contract",
+        text:"To earn, develop a feature vote (Vote the room of other you like) by using a smart contract.",
+      },
+      {
+        status:false,
+        text:"Create NFT 100 items"
       },
     ]
   },

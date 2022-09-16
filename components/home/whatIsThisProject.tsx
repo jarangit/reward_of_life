@@ -17,7 +17,7 @@ const WhatIsThisProject = (props: Props) => {
             What is <span className="text-blue-500" >Your Things</span> Project.
           </div>
           <div className="text-sm w-3/4 my-3 lg:my-6 text-gray-300">
-            This project was created to save your things, your hobbit, your interest, and your success  then show  who are you
+          This initiative was designed to help you save your belongings, interests, and successes while showcasing who you are.
           </div>
           {/* <div className="flex gap-3">
           <div className="w-40 hover:bg-blue-500 hover:text-white text-blue-500 font-bold h-10 flex items-center justify-center rounded-md border-2 border-blue-500 transition-all cursor-pointer" >Get Start</div>

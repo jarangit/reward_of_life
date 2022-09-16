@@ -21,6 +21,7 @@ const InputPrimary = ({
       rounded-md
       border-blue
       mt-1
+      w-full
     `
   }), [])
   const onSetName = (e:any) => {

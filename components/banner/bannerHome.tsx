@@ -13,8 +13,7 @@ const BannerHome = (props: Props) => {
           <span className="text-blue-500" >Your things</span> Project
         </div>
         <div className="text-sm w-3/4 my-3 lg:my-6 text-gray-300">
-          Express yourself by the different icons we have.
-          We have many things. and others as well So this project creates pictures of things. and can have only one owner
+        Utilize one of the many icons we have to express yourself. We are very stocked. & others too, hence this project produces images of many objects. and may only have one owner.
         </div>
         <div className="flex gap-3">
           <Link href="/playground">

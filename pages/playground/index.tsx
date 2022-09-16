@@ -11,20 +11,28 @@ const PlaygroundPage = (props: Props) => {
   const [nameScene, setNameScene] = useState("")
   const [userAvatar, setUserAvatar] = useState("")
   return (
-    <div className='grid grid-cols-4 min-h-screen main_container !mb-6 gap-6'>
-      <div className='col-span-3 p-3 border border-white rounded-lg min-h-screen'>
-        <CardShowScene
-          nameScene={nameScene}
-          userAvatar={userAvatar}
-        />
+    <>
+      <div className='hidden md:grid grid-cols-4 min-h-screen main_container !mb-6 gap-6'>
+        <div className='col-span-3 p-3 border-r  min-h-screen'>
+          <CardShowScene
+            nameScene={nameScene}
+            userAvatar={userAvatar}
+          />
+        </div>
+        <div className="col-span-1   p-3">
+          <UserController
+            onChangeNameScene={setNameScene}
+            onChangeUserAvatar={setUserAvatar}
+          />
+        </div>
       </div>
-      <div className="col-span-1 border border-white rounded-lg p-3">
-        <UserController
-          onChangeNameScene={setNameScene}
-          onChangeUserAvatar={setUserAvatar}
-        />
+
+      <div className='mg:hidden min-h-screen flex items-center p-6'>
+        <div>
+          Try again later since this website may not support mobile devices.
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

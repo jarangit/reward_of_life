@@ -5,7 +5,7 @@ type Props = {}
 
 const RoadMap = (props: Props) => {
   return (
-    <div className="bg-[#151515] py-10">
+    <div className="bg-[#151515] py-10 px-6">
       <div className='py-10 '>
         <div className='text-3xl font-bold text-center text-blue-500 uppercase'>Road Map</div>
         <ul className='w-full lg:w-2/4 mx-auto my-3'>

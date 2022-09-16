@@ -24,9 +24,9 @@ const MenuMB = (props: Props) => {
       </div>
       <div className="relative">
         {toggle ? (
-          <div className={`absolute border bg-white h-auto top-6 w-40 left-[-120px] rounded-md p-2 drop-shadow-[0_10px_10px_rgba(0,0,0,0.25)]`}>
+          <div className={`absolute border bg-white h-auto top-6 w-40 left-[-120px] rounded-md p-2 drop-shadow-[0_10px_10px_rgba(0,0,0,0.25)] text-back`}>
             <ul className="items-center font-bold text-gray-400 cursor-pointer">
-              <li className={`mt-2 hover:text-black transition-all relative ${router.asPath == '/' && 'text-blue-500'}`}>
+              <li className={`mt-2 hover:text-black transition-all relative ${router.asPath == '/' && 'text-blue'}`}>
                 <Link href='/'>
                   <a>
                     Home
@@ -34,7 +34,7 @@ const MenuMB = (props: Props) => {
                   </a>
                 </Link>
               </li>
-              <li className={`mt-2 hover:text-black transition-all relative ${router.asPath == '/icon_rewards' && 'text-blue-500'}`}>
+              <li className={`mt-2 hover:text-black transition-all relative ${router.asPath == '/icon_rewards' && 'text-blue'}`}>
                 <Link href='https://opensea.io/collection/yourthings'>
                   <a>
                     Things
@@ -42,7 +42,7 @@ const MenuMB = (props: Props) => {
                   </a>
                 </Link>
               </li>
-              <li className={`mt-2 hover:text-black transition-all relative ${router.asPath == '/icon_rewards' && 'text-blue-500'}`}>
+              <li className={`mt-2 hover:text-black transition-all relative ${router.asPath == '/playground' && 'text-blue'}`}>
                 <Link href='/playground'>
                   <a>
                     Playground

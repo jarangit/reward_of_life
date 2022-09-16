@@ -19,13 +19,11 @@ const CardShowScene = ({ nameScene, userAvatar }: Props) => {
   const [item4, setItem4] = useState("")
 
   const { isShowModalSelectItemIcon, setIsShowModalSelectItemIcon, setIsShowModalShowScene, isShowModalShowScene } = useModal("")
-  console.log('%cMyProject%cline:21%cisShowModalShowScene', 'color:#fff;background:#ee6f57;padding:3px;border-radius:2px', 'color:#fff;background:#1f3c88;padding:3px;border-radius:2px', 'color:#fff;background:rgb(3, 22, 52);padding:3px;border-radius:2px', isShowModalShowScene)
   const componentExportImage: any = useRef()
-  console.log('%cMyProject%cline:23%ccomponentExportImage', 'color:#fff;background:#ee6f57;padding:3px;border-radius:2px', 'color:#fff;background:#1f3c88;padding:3px;border-radius:2px', 'color:#fff;background:rgb(3, 22, 52);padding:3px;border-radius:2px', componentExportImage)
   return (
     <div className="">
-      <div className='text-2xl font-bold'>
-        Your Scene
+      <div className='text-2xl font-bold uppercase'>
+        Your Card
         <span className='text-blue'> Demo</span>
       </div>
       {/* <div ref = {componentExportImage}> */}
