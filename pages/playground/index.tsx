@@ -27,7 +27,7 @@ const PlaygroundPage = (props: Props) => {
         </div>
       </div>
 
-      <div className='mg:hidden min-h-screen flex items-center p-6'>
+      <div className='md:hidden min-h-screen flex items-center p-6'>
         <div>
           Try again later since this website may not support mobile devices.
         </div>

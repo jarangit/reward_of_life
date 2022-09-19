@@ -55,7 +55,9 @@ const Menu = (props: Props) => {
             <BsInstagram />
           </li> */}
           <li>
-            <AiFillTwitterSquare size = {30}/>
+            <Link href={"https://twitter.com/rewardoflife1"}>
+              <AiFillTwitterSquare size={30} />
+            </Link>
           </li>
           {/* <li><FaDiscord /></li> */}
         </ul>
